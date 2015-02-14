@@ -1,0 +1,16 @@
+<h4>Author</h4>
+{{name}}
+<p>
+  {{bio}}
+</p>
+
+{{#each book in books}}
+  <p>
+    {{#link-to "books.book" book}}
+      {{book.title}}
+    {{/link-to}}
+  </p>
+{{/each}}
+
+
+<img {{bind-attr src=image}} />

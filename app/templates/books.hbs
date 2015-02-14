@@ -1,0 +1,12 @@
+<h4>Books:</h4>
+
+{{#each book in model}}
+  <p>
+    {{#link-to "books.book" book}}
+      {{book.title}}
+    {{/link-to}}
+  </p>
+
+{{/each}}
+
+{{outlet}}

@@ -1,0 +1,20 @@
+<h4>{{title}}</h4>
+{{#each review in reviews}}
+  <p>
+    {{review.text}}
+  </p>
+{{/each}}
+<ul>
+  <li>{{genre}}</li>
+  <li>{{author.name}}</li>
+  <li>{{year}}</li>
+  <a {{bind-attr href=amazonLink}}>Amazon Link</a>
+</ul>
+
+{{#each review in reviews}}
+  <p>
+    {{review.text}}
+  </p>
+{{/each}}
+
+<img {{bind-attr src=image}} />
