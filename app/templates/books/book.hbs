@@ -1,18 +1,15 @@
 <h4>{{title}}</h4>
-{{#each review in reviews}}
-  <p>
-    {{review.text}}
-  </p>
-{{/each}}
+
 <ul>
   <li>{{genre}}</li>
   <li>{{author.name}}</li>
   <li>{{year}}</li>
   <a {{bind-attr href=amazonLink}}>Amazon Link</a>
 </ul>
-
+<h1>Average Rating: {{avgRating}}</h1>
 {{#each review in reviews}}
   <p>
+    <strong>{{review.rating}}</strong>
     {{review.text}}
   </p>
 {{/each}}
