@@ -2,7 +2,11 @@
 
 <ul>
   <li>{{genre}}</li>
-  <li>{{author.name}}</li>
+  <li>
+    {{#link-to "authors.author" author}}
+      {{author.name}}
+    {{/link-to}}
+  </li>
   <li>{{year}}</li>
   <a {{bind-attr href=amazonLink}}>Amazon Link</a>
 </ul>
